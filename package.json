@@ -2,10 +2,9 @@
   "name": "usersperceived",
   "version": "1.0.0",
   "description": "Users Perceived Performance Monitoring Platform",
-  "main": "index.js",
   "scripts": {
-    "start": "node app",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack && npm run start",
+    "start": "node app"
   },
   "repository": {
     "type": "git",
@@ -22,5 +21,12 @@
   "homepage": "https://github.com/amitmotgi/usersperceived#readme",
   "dependencies": {
     "express": "^4.15.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.5.0",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^2.5.1"
   }
 }
