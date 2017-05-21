@@ -34,5 +34,9 @@
     "express": "^4.13.3",
     "webpack": "^1.9.11",
     "webpack-dev-middleware": "^1.2.0"
+  },
+  "engines": {
+    "node": "^4.2.6",
+    "npm": "^3.5.3"
   }
 }
