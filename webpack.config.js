@@ -11,9 +11,9 @@ module.exports = {
   devtool: 'eval',
   entry: './src/index',
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, 'build'),
     filename: 'bundle.js',
-    publicPath: '/dist/'
+    publicPath: 'build/'
   },
   module: {
     loaders: [{
@@ -23,8 +23,9 @@ module.exports = {
       include: __dirname,
     }]
   },
-  plugins: [HtmlWebpackPluginConfig],
+//  plugins: [HtmlWebpackPluginConfig],
   node: {
-    fs: "empty"
+    fs: "empty",
+    net: "empty"
   }
 };
