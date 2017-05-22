@@ -4,9 +4,9 @@
   "description": "Users Perceived Performance Monitoring Platform",
   "scripts": {
     "fire": "webpack && babel-node  app.js",
-    "start1": "webpack && npm run build",
+    "start": "webpack && npm run build",
     "build": "node app",
-    "start": "webpack-dev-server"
+    "dev": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
